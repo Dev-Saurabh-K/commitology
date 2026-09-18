@@ -1,10 +1,11 @@
 
 
 function App() {
+  
 
   return (
     <>
-    <div></div>
+    <div className="bg-amber-400">hii</div>
     </>
   )
 }
