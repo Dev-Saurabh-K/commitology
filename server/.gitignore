@@ -1,2 +1,4 @@
 node_modules
 .env
+private_readme.md
+private_githubAuth.md

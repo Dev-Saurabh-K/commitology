@@ -1,0 +1,1 @@
+remove react stricty mode
