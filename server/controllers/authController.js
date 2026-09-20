@@ -105,3 +105,15 @@ export const github_callback = async (req, res) => {
         res.status(500).send("Authentication failed");
     }
 };
+
+export const github_logout = async(req, res) => {
+    res.clearCookie("access_token", {
+        httpOnly: true,
+        secure: false, // true in production
+        sameSite: "lax"
+    });
+
+    res.status(200).json({
+        message: "Logged out successfully"
+    });
+}
