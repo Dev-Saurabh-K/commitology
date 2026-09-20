@@ -1,13 +1,17 @@
 
 
 function App() {
-
-  function login
-  
-
+  const loginWithGithub = () => {
+        window.location.href =
+            "http://localhost:8000/auth/github";
+    };
   return (
     <>
-    <div className="bg-amber-400">hii</div>
+    <div className="bg-amber-400">
+      <button onClick={loginWithGithub}>
+            Continue with GitHub
+        </button>
+    </div>
     </>
   )
 }
